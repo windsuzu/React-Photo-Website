@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+# React Photo Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!--
+*** Thanks for checking out the React-Photo-Website. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Thanks again! Now go create something AMAZING! :D
+***
+*** To avoid retyping too much info. Do a search and replace for the following:
+*** github_username (that is "windsuzu"), repo_name (that is "React-Photo-Website"), project_title, project_description
+-->
 
-## Available Scripts
+<!-- [![Issues][issues-shield]][issues-url] -->
+<!-- [![PR Welcome][pr-welcome-shield]](#contributing) -->
+[![Contributors][contributors-shield]][contributors-url]
+[![MIT License][license-shield]][license-url]
+[![Author][author-shield]][author-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-In the project directory, you can run:
 
-### `npm start`
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://windsuzu.github.io/React-Photo-Website">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  <h3 align="center">React Photo Website</h3>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  <p align="center">
+    A photo website designed by react.js and react router.
+    <br />
+    <a href="https://windsuzu.github.io/React-Photo-Website">View Demo</a>
+    ·
+    <a href="https://github.com/windsuzu/React-Photo-Website/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/windsuzu/React-Photo-Website/issues">Request Feature</a>
+  </p>
+</p>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<details>
+<summary>Table of Contents</summary>
 
-### `npm run build`
+* [React Photo Website](#react-photo-website)
+  * [About](#about)
+  * [Features](#features)
+  * [Preview](#preview)
+  * [License](#license)
+  * [Contact](#contact)
+  * [Acknowledgements](#acknowledgements)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+</details>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- ABOUT THE PROJECT -->
+## About
 
-### `npm run eject`
+<table>
+<tr>
+<td>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**React Photo Website** 主要利用 React.js 及 react-router 來實作一個圖片展示、搜尋、下載的網站。 **React Photo Website** 中的所有圖片都是透過 [Pexels API](https://www.pexels.com/zh-tw/api/) 從 Pexels 下載而來。
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Built With**:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- React.js / React Router
+- HTML5, CSS3, SCSS
+- [Pexels API](https://www.pexels.com/zh-tw/api/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+</td>
+</tr>
+</table>
 
-## Learn More
+## Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Preview
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+Distributed under the MIT License. See [LICENSE](https://github.com/windsuzu/React-Photo-Website/blob/main/LICENSE) for more information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contact
 
-### Making a Progressive Web App
+Reach out to the maintainer at one of the following places:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* [GitHub discussions](https://github.com/windsuzu/React-Photo-Website/discussions)
+* The email which is located [in GitHub profile](https://github.com/windsuzu)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Acknowledgements
 
-### Deployment
+* [Wilson Ren](https://www.udemy.com/user/wilson-r-6/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[contributors-shield]: https://img.shields.io/github/contributors/windsuzu/React-Photo-Website.svg?style=for-the-badge
+[contributors-url]: https://github.com/windsuzu/React-Photo-Website/graphs/contributors
+[issues-shield]: https://img.shields.io/github/issues/windsuzu/React-Photo-Website.svg?style=for-the-badge
+[issues-url]: https://github.com/windsuzu/React-Photo-Website/issues
+[license-shield]: https://img.shields.io/github/license/windsuzu/React-Photo-Website.svg?style=for-the-badge&label=license
+[license-url]: https://github.com/windsuzu/React-Photo-Website/blob/main/LICENSE
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/windsuzu
+[pr-welcome-shield]: https://shields.io/badge/PRs-Welcome-ff69b4?style=for-the-badge
+[author-shield]: https://shields.io/badge/Made_with_%E2%9D%A4_by-windsuzu-F4A92F?style=for-the-badge
+[author-url]: https://github.com/windsuzu
