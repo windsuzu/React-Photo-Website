@@ -5,7 +5,7 @@ const Picture = ({ data }) => {
         <div className="picture">
             <p>{data.photographer}</p>
             <img src={data.src.medium} alt={data.alt} title={data.alt} />
-            <a target="_blank" href={data.src.large}>
+            <a target="_blank" rel="noreferrer" href={data.src.large}>
                 Download Image
             </a>
         </div>

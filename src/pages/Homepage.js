@@ -5,21 +5,27 @@ import * as api from "../api/pexels";
 
 const Homepage = () => {
     const [data, setData] = useState([]);
+    const [query, setQuery] = useState("");
 
-    useEffect(
-        () =>
-            api
-                .fetchPexelsData(api.curated_url())
-                .then((res) => res.json())
-                .then((data) => setData(data.photos)),
-        []
-    );
+    const fetchData = (url) => {
+        api.fetchPexelsData(url)
+            .then((res) => res.json())
+            .then((data) => setData(data.photos));
+    };
+
+    useEffect(() => fetchData(api.curated_url()), []);
 
     return (
         <>
-            <Search />
+            <Search
+                fetchData={() => fetchData(api.search_url(query))}
+                query={query}
+                setQuery={setQuery}
+            />
             <div className="pictures">
-                {data && data.map((d) => <Picture data={d} />)}
+                {data.map((d) => (
+                    <Picture data={d} key={d.id} />
+                ))}
             </div>
         </>
     );
