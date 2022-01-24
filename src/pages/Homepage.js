@@ -36,8 +36,9 @@ const Homepage = () => {
                 setQuery={setQuery}
             />
             <div className="pictures">
-                {data.length &&
-                    data.map((d) => <Picture data={d} key={d.id} />)}
+                {data.map((d) => (
+                    <Picture data={d} key={d.id} />
+                ))}
             </div>
             {nextPage && (
                 <div className="loadmore">
