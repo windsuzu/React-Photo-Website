@@ -78,17 +78,33 @@
 
 ## Features
 
+* [導入 Pexels API 並獲取 Pexels 圖片](src/api/pexels.js)
+* 設定 React Router
+  * [[BrowserRouter]](https://github.com/windsuzu/React-Photo-Website/blob/main/src/index.js#L8-L10)
+  * [[Routes]](https://github.com/windsuzu/React-Photo-Website/blob/main/src/App.js#L12-L15)
+  * [[Link]](https://github.com/windsuzu/React-Photo-Website/blob/main/src/components/Nav.js#L9-L14)
+* 搜尋圖片 & 載入圖片 (共用 fetchData)
+  * [[Function]](https://github.com/windsuzu/React-Photo-Website/blob/main/src/pages/Homepage.js#L11-L18)
+  * [[Picture 物件]](https://github.com/windsuzu/React-Photo-Website/blob/main/src/pages/Homepage.js#L38-L42) [[Picture 物件細節]](https://github.com/windsuzu/React-Photo-Website/blob/main/src/components/Picture.js#L1-L25)
+* 初始載入圖片
+  * [[useEffect]](https://github.com/windsuzu/React-Photo-Website/blob/main/src/pages/Homepage.js#L29)
+* 搜尋圖片
+  * [[搜尋列物件]](https://github.com/windsuzu/React-Photo-Website/blob/main/src/pages/Homepage.js#L33-L37)
+  * [[搜尋列物件細節]](https://github.com/windsuzu/React-Photo-Website/blob/main/src/components/Search.js#L1-L25)
+* 載入更多圖片
+  * [[Function]](https://github.com/windsuzu/React-Photo-Website/blob/main/src/pages/Homepage.js#L20-L27)
+  * [[載入更多按鈕物件]](https://github.com/windsuzu/React-Photo-Website/blob/main/src/pages/Homepage.js#L43-L47)
 
 ## Preview
 
 <p align="center">
-  <img src="public/images/web/1.png" width=48%>
-  <img src="public/images/web/2.png" width=48%>
+  <a href="https://windsuzu.github.io/React-Photo-Website" target="_blank"><img src="public/images/web/1.png" width=48%></a>
+  <a href="https://windsuzu.github.io/React-Photo-Website" target="_blank"><img src="public/images/web/2.png" width=48%></a>
 </p>
 
 <p align="center">
-  <img src="public/images/phone/1.png" width=25%>
-  <img src="public/images/phone/2.png" width=25%>
+  <a href="https://windsuzu.github.io/React-Photo-Website" target="_blank"><img src="public/images/phone/1.png" width=25%></a>
+  <a href="https://windsuzu.github.io/React-Photo-Website" target="_blank"><img src="public/images/phone/2.png" width=25%></a>
 </p>
 
 ---
