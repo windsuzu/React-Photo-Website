@@ -29,7 +29,7 @@ const Homepage = () => {
     useEffect(() => fetchData(api.curated_url()), []);
 
     return (
-        <>
+        <main>
             <Search
                 fetchData={() => fetchData(api.search_url(query))}
                 query={query}
@@ -45,7 +45,7 @@ const Homepage = () => {
                     <button onClick={loadMoreData}>Load More</button>
                 </div>
             )}
-        </>
+        </main>
     );
 };
 

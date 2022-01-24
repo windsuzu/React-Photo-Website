@@ -14,6 +14,10 @@ ul {
   list-style-type: none;
 }
 
+main {
+  min-height: 90vh;
+}
+
 nav {
   background-color: #52c3c1;
   display: -webkit-box;
@@ -60,6 +64,28 @@ nav ul li a {
   nav ul li a {
     font-size: 0.75rem;
     margin: 0.5rem 0.75rem;
+  }
+}
+
+footer {
+  background-color: bisque;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer h1 {
+  padding: 1.5rem;
+  font-size: 1.25rem;
+  color: #8d8d8d;
+}
+
+@media screen and (max-width: 550px) {
+  footer h1 {
+    font-size: 0.625rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
