@@ -17,20 +17,17 @@ main {
     min-height: 90vh;
 }
 
+.about {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .loadmore {
     display: flex;
     justify-content: center;
     padding: 2rem;
-
-    // button {//     width: 85%;
-    //     padding: 1rem;
-    //     border: none;
-
-    //     &:hover {
-    //         cursor: pointer;
-    //         background-color: antiquewhite
-    //     }
-    // }
 
     /* CSS */
     button {

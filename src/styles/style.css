@@ -18,6 +18,19 @@ main {
   min-height: 90vh;
 }
 
+.about {
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .loadmore {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,6 +104,10 @@ nav h1 {
   padding-left: 3rem;
   margin-right: auto;
   font-family: 'Neonderthaw', cursive;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 nav ul {
@@ -134,7 +151,9 @@ footer {
 footer h1 {
   padding: 1.5rem;
   font-size: 1.25rem;
+  font-weight: 100;
   color: #8d8d8d;
+  font-family: serif;
 }
 
 @media screen and (max-width: 550px) {
