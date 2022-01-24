@@ -3,10 +3,10 @@
 // =============================================================================
 
 export const curated_url = (page = 1) =>
-    `https://api.pexels.com/v1/curated?page=${page}`;
+    `https://api.pexels.com/v1/curated?page=${page}&per_page=15`;
 
 export const search_url = (query, page = 1) =>
-    `https://api.pexels.com/v1/search?query=${query}&page=${page}`;
+    `https://api.pexels.com/v1/search?query=${query}&page=${page}&per_page=15`;
 
 /**
  * Return JSON example:

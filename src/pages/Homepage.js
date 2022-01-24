@@ -6,11 +6,24 @@ import * as api from "../api/pexels";
 const Homepage = () => {
     const [data, setData] = useState([]);
     const [query, setQuery] = useState("");
+    const [nextPage, setNextPage] = useState("");
 
     const fetchData = (url) => {
         api.fetchPexelsData(url)
             .then((res) => res.json())
-            .then((data) => setData(data.photos));
+            .then((data) => {
+                setNextPage(data.next_page);
+                setData(data.photos);
+            });
+    };
+
+    const loadMoreData = () => {
+        api.fetchPexelsData(nextPage)
+            .then((res) => res.json())
+            .then((data) => {
+                setNextPage(data.next_page);
+                setData((pre) => [...pre, ...data.photos]);
+            });
     };
 
     useEffect(() => fetchData(api.curated_url()), []);
@@ -23,10 +36,14 @@ const Homepage = () => {
                 setQuery={setQuery}
             />
             <div className="pictures">
-                {data.map((d) => (
-                    <Picture data={d} key={d.id} />
-                ))}
+                {data.length &&
+                    data.map((d) => <Picture data={d} key={d.id} />)}
             </div>
+            {nextPage && (
+                <div className="loadmore">
+                    <button onClick={loadMoreData}>Load More</button>
+                </div>
+            )}
         </>
     );
 };
