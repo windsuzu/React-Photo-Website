@@ -1,10 +1,22 @@
 import React from "react";
 
-const Search = () => {
+const Search = ({ fetchData, query, setQuery }) => {
     return (
         <div className="search">
-            <input type="text" />
-            <button>Search</button>
+            <input
+                type="text"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+            />
+            <button
+                onClick={() => {
+                    if (query.length <= 0) return;
+                    fetchData();
+                    setQuery("");
+                }}
+            >
+                Search
+            </button>
         </div>
     );
 };
