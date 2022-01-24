@@ -94,7 +94,10 @@
 * 載入更多圖片
   * [[Function]](https://github.com/windsuzu/React-Photo-Website/blob/main/src/pages/Homepage.js#L20-L27)
   * [[載入更多按鈕物件]](https://github.com/windsuzu/React-Photo-Website/blob/main/src/pages/Homepage.js#L43-L47)
-
+* React Github Pages Deployment
+  * `npm install --save gh-pages`
+  * [[package.json homepage]](https://github.com/windsuzu/React-Photo-Website/blob/main/package.json#L3) [[package.json scripts]](https://github.com/windsuzu/React-Photo-Website/blob/main/package.json#L18-L19)
+  * `npm run deploy`
 ## Preview
 
 <p align="center">
