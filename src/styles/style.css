@@ -99,7 +99,7 @@ footer h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3rem;
+  padding: 2rem 3rem 1rem 3rem;
 }
 
 .search input {
@@ -123,5 +123,102 @@ footer h1 {
   cursor: pointer;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.pictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.pictures .picture {
+  padding: 1rem;
+}
+
+.pictures .imgContainer {
+  overflow: hidden;
+  width: 300px;
+  height: 20vw;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  position: relative;
+}
+
+.pictures .imgContainer img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.pictures .imgContainer img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0.66;
+  z-index: -1;
+}
+
+.pictures .imgContainer .hint {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: all 0.5s ease;
+          transform: all 0.5s ease;
+}
+
+.pictures .imgContainer .hint:hover + img {
+  opacity: 0.66;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.pictures .imgContainer .hint:hover {
+  z-index: 100;
+  opacity: 1;
+}
+
+@media screen and (max-width: 550px) {
+  .pictures .imgContainer {
+    width: 250px;
+    height: 30vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */
