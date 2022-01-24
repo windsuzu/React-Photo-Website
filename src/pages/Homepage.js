@@ -37,7 +37,7 @@ const Homepage = () => {
             />
             <div className="pictures">
                 {data.map((d) => (
-                    <Picture data={d} key={d.id} />
+                    <Picture data={d} key={`${d.id}${new Date().getTime()}`} />
                 ))}
             </div>
             {nextPage && (

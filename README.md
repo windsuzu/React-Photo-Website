@@ -22,7 +22,7 @@
 <br />
 <p align="center">
   <a href="https://windsuzu.github.io/React-Photo-Website">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="public/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">React Photo Website</h3>
@@ -63,10 +63,13 @@
 
 **React Photo Website** 主要利用 React.js 及 react-router 來實作一個圖片展示、搜尋、下載的網站。 **React Photo Website** 中的所有圖片都是透過 [Pexels API](https://www.pexels.com/zh-tw/api/) 從 Pexels 下載而來。
 
+**[DEMO]** https://windsuzu.github.io/React-Photo-Website
+
 **Built With**:
 
-- React.js / React Router
 - HTML5, CSS3, SCSS
+- JavaScript ES6
+- React.js / React Router
 - [Pexels API](https://www.pexels.com/zh-tw/api/)
 
 </td>
@@ -77,6 +80,16 @@
 
 
 ## Preview
+
+<p align="center">
+  <img src="public/images/web/1.png" width=48%>
+  <img src="public/images/web/2.png" width=48%>
+</p>
+
+<p align="center">
+  <img src="public/images/phone/1.png" width=25%>
+  <img src="public/images/phone/2.png" width=25%>
+</p>
 
 ---
 
