@@ -1,0 +1,19 @@
+footer {
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+
+    h1 {
+        padding: 1.5rem;
+        font-size: 1.25rem;
+        font-weight: 100;
+        color: rgb(141, 141, 141);
+        font-family: serif;
+    }
+}
+
+@media screen and (max-width:550px) {
+    footer h1 {
+        font-size: 1.25*0.5rem
+    }
+}

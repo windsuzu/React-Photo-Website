@@ -29,22 +29,23 @@ const Homepage = () => {
     useEffect(() => fetchData(api.curated_url()), []);
 
     return (
-        <>
+        <main>
             <Search
                 fetchData={() => fetchData(api.search_url(query))}
                 query={query}
                 setQuery={setQuery}
             />
             <div className="pictures">
-                {data.length &&
-                    data.map((d) => <Picture data={d} key={d.id} />)}
+                {data.map((d) => (
+                    <Picture data={d} key={d.id} />
+                ))}
             </div>
             {nextPage && (
                 <div className="loadmore">
                     <button onClick={loadMoreData}>Load More</button>
                 </div>
             )}
-        </>
+        </main>
     );
 };
 

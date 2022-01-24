@@ -1,0 +1,45 @@
+nav {
+    background-color: #52c3c1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: white;
+        font-size: 2rem;
+        padding-left: 3rem;
+        margin-right: auto;
+        font-family: 'Neonderthaw', cursive;
+        user-select: none;
+    }
+
+    ul {
+        display: flex;
+        margin-right: 1rem;
+        padding: 2rem;
+
+        li a {
+            font-size: 1.5rem;
+            margin: 1rem 1.5rem;
+            color: white;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    nav {
+        h1 {
+            font-size: 2*.5rem
+        }
+
+        ul {
+            margin-right: 1*.5rem;
+            padding: 2*.5rem;
+
+            li a {
+                font-size: 1.5*.5rem;
+                margin: 1*.5rem 1.5*.5rem;
+            }
+        }
+    }
+}
