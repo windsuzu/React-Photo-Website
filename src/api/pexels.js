@@ -49,6 +49,7 @@ export const search_url = (query, page = 1) =>
 export const fetchPexelsData = async (url) => {
     return fetch(url, {
         method: "GET",
+        mode: "cors",
         headers: {
             Accept: "application/json",
             Authorization: process.env.REACT_APP_PEXELS_API,
