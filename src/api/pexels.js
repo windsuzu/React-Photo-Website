@@ -49,10 +49,10 @@ export const search_url = (query, page = 1) =>
 export const fetchPexelsData = async (url) => {
     return fetch(url, {
         method: "GET",
-        mode: "cors",
         headers: {
             Accept: "application/json",
-            Authorization: process.env.REACT_APP_PEXELS_API,
+            Authorization:
+                "563492ad6f917000010000019dc411cd65e4414aa8726034aaf461ec",
         },
     });
 };
