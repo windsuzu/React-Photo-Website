@@ -1,5 +1,3 @@
-# React Gallery
-
 <!--
 *** Thanks for checking out the react-gallery. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
@@ -16,7 +14,6 @@
 [![MIT License][license-shield]][license-url]
 [![Author][author-shield]][author-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
 
 <!-- PROJECT LOGO -->
 <br />
