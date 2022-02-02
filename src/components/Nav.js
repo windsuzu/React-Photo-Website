@@ -7,10 +7,10 @@ const Nav = () => {
             <h1>React Photo Website</h1>
             <ul>
                 <li>
-                    <Link to="/React-Photo-Website/">Home</Link>
+                    <Link to="/react-gallery/">Home</Link>
                 </li>
                 <li>
-                    <Link to="/React-Photo-Website/about">About</Link>
+                    <Link to="/react-gallery/about">About</Link>
                 </li>
             </ul>
         </nav>

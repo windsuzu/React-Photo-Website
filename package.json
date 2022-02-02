@@ -1,6 +1,6 @@
 {
-  "name": "react-photo-website",
-  "homepage": "https://windsuzu.github.io/React-Photo-Website",
+  "name": "react-gallery",
+  "homepage": "https://windsuzu.github.io/react-gallery",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -10,8 +10,8 @@ function App() {
         <>
             <Nav />
             <Routes>
-                <Route path="/React-Photo-Website/" element={<Homepage />} />
-                <Route path="/React-Photo-Website/about" element={<About />} />
+                <Route path="/react-gallery/" element={<Homepage />} />
+                <Route path="/react-gallery/about" element={<About />} />
             </Routes>
             <Footer />
         </>
